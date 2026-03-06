@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Terms of service for Vital Elixir Globalist including informational purpose, non-medical advice statement, and patient responsibilities.">
+    <title>Terms of Service | Vital Elixir Globalist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="header-placeholder"></div>
+      <main>
+        <section class="page-title">
+            <div class="container">
+                <h1>About Vital Elixir Globalist</h1>
+                <p>
+                    A patient-centered support platform focused on medication access consultation and education.
+                </p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container grid">
+
+                <article class="card">
+                    <h2>Our Mission</h2>
+                    <p>
+                        To help patients navigate medication access complexity and unaffordability through informed consultation,
+                        transparency, and reliable communication.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h2>Ethical Position</h2>
+                    <p>
+                        We do not act as a seller or pharmacy. We provide support, research insights, and guidance
+                        while respecting medical and regulatory boundaries.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h2>Patient-First Philosophy</h2>
+                    <p>
+                        Each inquiry is handled with respect, confidentiality, and practical educational context
+                        to empower better decisions.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h2>Education-Driven Approach</h2>
+                    <p>
+                        We simplify global pricing and access factors so patients can discuss options responsibly
+                        with licensed healthcare professionals.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h2>International Research Focus</h2>
+                    <p>
+                        Our team explores medication access variables internationally to provide context —
+                        not to export or distribute medication.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+          <!-- Team Section -->
+<section class="section" id="our-team">
+  <div class="container">
+    <h2 style="text-align:center; margin-bottom:2.5rem;">Meet Our Team</h2>
+
+    <div class="grid team-grid">
+
+      <!-- Member 1 -->
+      <div class="card team-card">
+        <img src="images/Kashyaksahu.jpeg" alt="Kashyak L Sahu">
+        <div class="team-info">
+          <h3>Kashyak L Sahu</h3>
+          <p>CEO, Strategic Leader</p>
+          <p>✉️ <a href="mailto:Kashyaksahu@VitalElixirglobalist.com">Kashyaksahu@VitalElixirglobalist.com</a></p>
+          <p>📞 +91 827-559-5850</p>
+        </div>
+      </div>
+
+      <!-- Member 2 -->
+      <div class="card team-card">
+        <img src="images/yash.jpeg" alt="Yash L Sahu">
+        <div class="team-info">
+          <h3>Yash L Sahu</h3>
+          <p>Chief Research Technical</p>
+          <p>✉️ <a href="mailto:Yashsahu@VitalElixirglobalist.com">GVitalElixirglobalist@gmail.com</a></p>
+           <p>📞 +91 942-005-9603</p>
+        </div>
+      </div>
+
+      <!-- Member 3 -->
+      <div class="card team-card">
+        <img src="images/sanjayparatemadarchod.jpeg" alt="Kunal Parate">
+        <div class="team-info">
+          <h3>Kunal Parate</h3>
+          <p>Pharmacist – Consultation<br>Market Pricing Analyst and </p>
+          <p>✉️ <a href="mailto:Vitalelixirglobal@gmail.com">Vitalelixirglobal@gmail.com</a></p>
+          <p>📞 +91 965-786-2462</p>
+        </div>
+      </div>
+
+      <!-- Member 4 -->
+      <div class="card team-card">
+        <img src="images/pragati.jpeg" alt="Pragati Jaiswal">
+        <div class="team-info">
+          <h3>Pragati Jaiswal</h3>
+          <p>Customer Relationship Manager</p>
+          <p>✉️ <a href="mailto:Pragati.meds.help@VitalElixirglobalist.com">Pragati.meds.help@VitalElixirglobalist.com</a></p>
+          <p>📞 +91 965-786-2461</p>
+        </div>
+      </div>
+
+      <!-- Member 5 -->
+      <div class="card team-card">
+        <img src="images/doctor.jpeg" alt="Dr. Asfi Shirin">
+        <div class="team-info">
+          <h3>Dr. Asfi Shirin</h3>
+          <p>Consultant, Practitioner Doctor</p>
+          <p>✉️ <a href="mailto:AsfiShirin@VitalElixirglobalist.com">AsfiShirin@VitalElixirglobalist.com</a></p>
+        </div>
+      </div>
+
+    </div> <!-- .grid -->
+  </div> <!-- .container -->
+</section>
+
+    </main>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <h3>Vital Elixir Globalist</h3>
+      <p class="small">
+        Support platform for global medication access consultation.
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms</a>
+      <a href="disclaimer.html">Disclaimer</a>
+    </div>
+
+    <div class="small">
+      © 2026 Vital Elixir Globalist
+    </div>
+  </div>
+</footer>
+
+<div id="floating-placeholder"></div>
+
+<script>
+    fetch("header.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("header-placeholder").innerHTML = data;
+
+            // 🔑 Initialize menu AFTER header loads
+            const menuBtn = document.querySelector('.menu-btn');
+            const navLinks = document.querySelector('.nav-links');
+
+            if (menuBtn && navLinks) {
+                menuBtn.addEventListener('click', () => {
+                    navLinks.classList.toggle('open');
+                });
+            }
+        });
+
+    fetch("floating-contact.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("floating-placeholder").innerHTML = data;
+        });
+</script>
+       <script src="script.js"></script>
+</body>
+</html>
