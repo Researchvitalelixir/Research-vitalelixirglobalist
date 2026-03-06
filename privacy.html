@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Privacy policy for Vital Elixir Globalist describing data collection, storage, confidentiality, and data removal rights.">
+    <title>Privacy Policy | Vital Elixir Globalist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+   <div id="header-placeholder"></div>
+
+    <main>
+
+        <section class="page-title">
+            <div class="container">
+                <h1>Privacy Policy</h1>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container card">
+
+                <h2>Data Collection</h2>
+                <p>
+                    We collect inquiry data submitted through forms, including contact
+                    details and consultation-related information.
+                </p>
+
+                <h2>Form Data Storage</h2>
+                <p>
+                    Submitted information is stored for support operations, follow-up
+                    communication, and quality assurance.
+                </p>
+
+                <h2>Confidentiality</h2>
+                <p>
+                    We maintain strict confidentiality practices and limit access to
+                    authorized support personnel.
+                </p>
+
+                <h2>No Sale of Personal Data</h2>
+                <p>
+                    We do not sell personal data to third parties.
+                </p>
+
+                <h2>Data Removal Requests</h2>
+                <p>
+                    You may request data deletion by contacting
+                    <a href="mailto:support@vitalelixirglobalist.com">
+                        support@vitalelixirglobalist.com
+                    </a>.
+                </p>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+
+            <div>
+                <h3>Vital Elixir Globalist</h3>
+            </div>
+
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms</a>
+                <a href="disclaimer.html">Disclaimer</a>
+            </div>
+
+            <div class="small">
+                Your privacy matters.
+            </div>
+
+        </div>
+    </footer>
+</aside>
+
+
+<div id="floating-placeholder"></div>
+
+<script>
+    fetch("header.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("header-placeholder").innerHTML = data;
+
+            // 🔑 Initialize menu AFTER header loads
+            const menuBtn = document.querySelector('.menu-btn');
+            const navLinks = document.querySelector('.nav-links');
+
+            if (menuBtn && navLinks) {
+                menuBtn.addEventListener('click', () => {
+                    navLinks.classList.toggle('open');
+                });
+            }
+        });
+
+    fetch("floating-contact.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("floating-placeholder").innerHTML = data;
+        });
+</script>
+        <script src="script.js"></script>
+</body>
+</html>
