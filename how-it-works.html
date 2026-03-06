@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Terms of service for Vital Elixir Globalist including informational purpose, non-medical advice statement, and patient responsibilities.">
+    <title>Terms of Service | Vital Elixir Globalist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div id="header-placeholder"></div>
+    <main>
+
+        <section class="page-title">
+            <div class="container">
+                <h1>How Our Consultation Process Works</h1>
+            </div>
+        </section>
+
+<section class="section">
+    <div class="container">
+        <div class="steps">
+
+            <div class="step">
+                <h3>Understanding Cost Differences</h3>
+                <ul>
+                    <li>Many patients discover that the same medication may have significant price differences across countries.</li>
+                    <li>These variations occur due to regulations, supply chains, and reimbursement systems.</li>
+                    <li>Patients often unknowingly pay higher prices through limited local supply channels.</li>
+                    <li>Understanding global comparisons helps reveal potential cost-efficient access pathways.</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h3> Submit Your Inquiry</h3>
+                <ul>
+                    <li>Patients can contact our support team through consultation forms or the Quick Cost Optimization solution.</li>
+                    <li>The inquiry allows patients to describe the medication they are searching for and their access challenges.</li>
+                    <li>Multiple communication channels are available for patient convenience.</li>
+                    <li>All submitted information is handled with strict confidentiality.</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h3> Share Medication Details</h3>
+                <ul>
+                    <li>Patients may submit prescription details, medicine brand names, or generic compositions.</li>
+                    <li>A photo of an existing medicine package can also be uploaded if available.</li>
+                    <li>If the exact medication name is unknown, patients may describe their condition or treatment.</li>
+                    <li>This helps our research team accurately identify the medication requirement.</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h3> Prescription Review</h3>
+                <ul>
+                    <li>Our specialists carefully review submitted prescription and medication details.</li>
+                    <li>This includes verifying dosage instructions, composition, and treatment context.</li>
+                    <li>The review ensures that guidance aligns with the physician’s original prescription.</li>
+                    <li>The process follows responsible and ethical consultation practices.</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h3> International Access Research</h3>
+                <ul>
+                    <li>Our research team analyzes global medication availability across regulated supply channels.</li>
+                    <li>Regional pricing structures and distribution networks are compared.</li>
+                    <li>Manufacturer supply chains and sourcing environments are studied.</li>
+                    <li>The goal is to identify potential global access insights for patient awareness.</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h3> Transparent Guidance</h3>
+                <ul>
+                    <li>Patients receive a clear explanation of research findings.</li>
+                    <li>Cost context and supply availability are explained transparently.</li>
+                    <li>Regulatory factors affecting international access are clearly presented.</li>
+                    <li>This supports informed patient decision-making with their physician.</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h3> Patient Decides Next Steps</h3>
+                <ul>
+                    <li>Patients review research insights and available options.</li>
+                    <li>Findings can be discussed with their physician or healthcare provider.</li>
+                    <li>Patients may explore lawful and economical medication access possibilities.</li>
+                    <li>Our role remains educational, supportive, and research-focused.</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+        <section class="section">
+            <div class="container grid">
+
+                <article class="card">
+                    <h3>Communication Channels</h3>
+                    <p>
+                        Email, phone, and messaging channels are available for
+                        responsive and continuous support communication.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Compliance Considerations</h3>
+                    <p>
+                        We do not provide medical advice, diagnosis, or medication sales.
+                        Guidance is informational and consultation-oriented.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Patient Responsibility</h3>
+                    <p>
+                        Patients must follow physician guidance and local regulations
+                        when evaluating medication access options.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+
+            <div>
+                <h3>Vital Elixir Globalist</h3>
+            </div>
+
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms</a>
+                <a href="disclaimer.html">Disclaimer</a>
+            </div>
+
+            <div class="small">
+                Confidential support communications.
+            </div>
+
+        </div>
+    </footer>
+
+ 
+<div id="floating-placeholder"></div>
+
+<script>
+    fetch("header.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("header-placeholder").innerHTML = data;
+
+            // 🔑 Initialize menu AFTER header loads
+            const menuBtn = document.querySelector('.menu-btn');
+            const navLinks = document.querySelector('.nav-links');
+
+            if (menuBtn && navLinks) {
+                menuBtn.addEventListener('click', () => {
+                    navLinks.classList.toggle('open');
+                });
+            }
+        });
+
+    fetch("floating-contact.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("floating-placeholder").innerHTML = data;
+        });
+</script>
+       <script src="script.js"></script>
+</body>
+</html>
