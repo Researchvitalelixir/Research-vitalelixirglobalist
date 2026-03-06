@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Terms of service for Vital Elixir Globalist including informational purpose, non-medical advice statement, and patient responsibilities.">
+    <title>Terms of Service | Vital Elixir Globalist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div id="header-placeholder"></div>
+       <main>
+
+        <section class="page-title">
+            <div class="container">
+                <h1>Frequently Asked Questions</h1>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+
+                <div class="faq-item">
+                    <h3>What services do you provide?</h3>
+                    <p>
+                        We provide consultation, access guidance, cost transparency insights,
+                        and international medication research assistance.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Are you a pharmacy?</h3>
+                    <p>
+                        No. We are not a pharmacy and do not dispense or sell medications.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Do you ship medications?</h3>
+                    <p>
+                        No. We do not ship medications. We provide informational support only.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Is prescription required?</h3>
+                    <p>
+                        Many support inquiries are best handled when prescription status is clear;
+                        physician oversight remains essential.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How do pricing discussions work?</h3>
+                    <p>
+                        We share educational cost context and access variables to help patients
+                        understand potential differences across regions.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What countries do you support?</h3>
+                    <p>
+                        We support patients from multiple regions with consultation-focused
+                        communication and research context.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Is my information confidential?</h3>
+                    <p>
+                        Yes. Confidentiality and privacy are core standards in our patient support process.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+
+            <div>
+                <h3>Vital Elixir Globalist</h3>
+            </div>
+
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms</a>
+                <a href="disclaimer.html">Disclaimer</a>
+            </div>
+
+            <div class="small">
+                Consultation & guidance focused.
+            </div>
+
+        </div>
+    </footer>
+
+
+<div id="floating-placeholder"></div>
+
+<script>
+    fetch("header.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("header-placeholder").innerHTML = data;
+
+            // 🔑 Initialize menu AFTER header loads
+            const menuBtn = document.querySelector('.menu-btn');
+            const navLinks = document.querySelector('.nav-links');
+
+            if (menuBtn && navLinks) {
+                menuBtn.addEventListener('click', () => {
+                    navLinks.classList.toggle('open');
+                });
+            }
+        });
+
+    fetch("floating-contact.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("floating-placeholder").innerHTML = data;
+        });
+</script>
+         <script src="script.js"></script>
+</body>
+</html>
