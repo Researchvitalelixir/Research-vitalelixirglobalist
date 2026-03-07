@@ -562,3 +562,9 @@ footer {
 .market-card{
     padding:25px;
 }
+.hero-black{
+color:#000000;
+font-weight:700;
+list-style-type: disc;
+padding-left:20px;
+}
